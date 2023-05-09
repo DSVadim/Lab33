@@ -1,3 +1,4 @@
 ﻿  MyForm.cpp
+C:\Users\vadim\source\repos\Lab33\Lab33\MyForm.cpp(6,1): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
   MyForm.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
-LINK : fatal error LNK1561: entry point must be defined
+  Lab33.vcxproj -> C:\Users\vadim\source\repos\Lab33\x64\Debug\Lab33.exe

@@ -18,13 +18,6 @@ namespace Lab33 {
 	/// </summary>
 	public ref class MyForm : public System::Windows::Forms::Form
 	{
-		void main(array<String^>^ args)
-		{
-			Application::EnableVisualStyles();
-			Application::SetCompatibleTextRenderingDefault(false);
-			Lab33::MyForm form; 
-			Application::Run(% form); 
-		}
 	public:
 		MyForm(void)
 		{
@@ -53,6 +46,7 @@ namespace Lab33 {
 	private: System::Windows::Forms::RichTextBox^ richTextBox1;
 	private: System::Windows::Forms::ImageList^ imageList1;
 	private: System::Windows::Forms::PictureBox^ pictureBox1;
+
 	private: System::ComponentModel::IContainer^ components;
 
 	private:
@@ -110,7 +104,7 @@ namespace Lab33 {
 			// 
 			// richTextBox1
 			// 
-			this->richTextBox1->Location = System::Drawing::Point(145, 215);
+			this->richTextBox1->Location = System::Drawing::Point(145, 165);
 			this->richTextBox1->Name = L"richTextBox1";
 			this->richTextBox1->Size = System::Drawing::Size(298, 405);
 			this->richTextBox1->TabIndex = 3;
@@ -125,10 +119,11 @@ namespace Lab33 {
 			// 
 			// pictureBox1
 			// 
+			this->pictureBox1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.BackgroundImage")));
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(-3, 117);
+			this->pictureBox1->Location = System::Drawing::Point(101, 97);
 			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(604, 102);
+			this->pictureBox1->Size = System::Drawing::Size(405, 62);
 			this->pictureBox1->TabIndex = 4;
 			this->pictureBox1->TabStop = false;
 			// 
